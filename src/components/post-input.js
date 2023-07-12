@@ -20,15 +20,16 @@ const Postinput = () => {
   const [title, setTitle] = useState('')
   const [phone, setPhone] = useState('')
 
-  const postSelector = useSelector(state => state.post.post)
-  const dispatch = useDispatch()
+  const postSelector = useSelector(state => state.post)
+  const dispatch = useDispatch([])
 
 const createPost = () => {
 
   const createPost = {
     name: name,
     title: title,
-    phone: phone
+    phone: phone,
+    date: new Date().toDateString()
   }
 
   if(name === '' || phone === '' || title === '') {

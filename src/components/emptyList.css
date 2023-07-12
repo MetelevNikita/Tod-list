@@ -1,0 +1,14 @@
+.emptylist {
+  margin-top: 20px;
+  width: 700px;
+  padding: 20px;
+  height: max-content;
+  background: white;
+  box-shadow: -5px 10px 0px rgba(64, 32, 145, 0.552);
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+}
