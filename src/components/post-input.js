@@ -31,9 +31,17 @@ const createPost = () => {
     phone: phone
   }
 
-  dispatch(CreatePostReducer(createPost))
-  console.log(createPost)
-  console.log(postSelector)
+  if(name === '' || phone === '' || title === '') {
+    alert('введите данные')
+  } else {
+    dispatch(CreatePostReducer(createPost))
+    console.log(postSelector)
+    setName('')
+    setTitle('')
+    setPhone('')
+  }
+
+
 }
 
 
