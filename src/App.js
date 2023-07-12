@@ -1,5 +1,9 @@
 import './App.css'
 
+// components
+
+import Postinput from './components/post-input'
+
 const App = () => {
 
 
@@ -7,6 +11,9 @@ const App = () => {
     <div className="App">
 
       <h1 className='title'>TODO LIST</h1>
+
+      <Postinput />
+
 
     </div>
   )

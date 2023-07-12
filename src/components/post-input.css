@@ -1,0 +1,44 @@
+.post-input-container {
+  width: 500px;
+  height: 400px;
+  background: white;
+  box-shadow: -5px 10px 0px rgba(64, 32, 145, 0.552);
+
+  border-radius: 15px;
+
+
+}
+
+.post-input-box {
+  padding: 30px;
+}
+
+.inputs-title {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.input-box {
+  margin-top: 15px;
+}
+
+.input-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  
+}
+
+.input-text {
+  margin-top: 5px;
+  padding-left: 15px;
+  width: 430px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+
+.input-line {
+  width: 430px;
+  height: 1px;
+  background: rgb(112, 112, 112);
+}
