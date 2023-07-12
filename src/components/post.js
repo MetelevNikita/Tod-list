@@ -1,7 +1,25 @@
-import Mybutton from './UI/Mybutton'
+import { DeletePostReducer } from '../store/poersonReducer'
 import './post.css'
 
+// components
+
+import Mybutton from './UI/Mybutton'
+
+//
+
+import { useSelector, useDispatch } from 'react-redux'
+
+
+
+
 const Post = (props) => {
+
+  const dispatch = useDispatch()
+
+  const deletePost = (post) => {
+    dispatch(DeletePostReducer(post))
+  }
+
 
 
   return(
@@ -16,7 +34,7 @@ const Post = (props) => {
 
         <div className="post-date">{`Дата создания: ${props.date}`}</div>
 
-        <Mybutton style={{marginTop: 20 + 'px'}} onClick={() => {console.log('click')}}>Удалить</Mybutton>
+        <Mybutton style={{marginTop: 20 + 'px'}} onClick={() => {deletePost(props.name)}}>Удалить</Mybutton>
 
       </div>
     </li>

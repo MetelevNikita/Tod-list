@@ -13,9 +13,6 @@ import { useSelector } from 'react-redux/es/hooks/useSelector'
 const Postlist = () => {
 
   const postSelector = useSelector(state => state.post.post)
-  console.log(postSelector)
-
-
 
   return(
     <ul className="post-list-container">
